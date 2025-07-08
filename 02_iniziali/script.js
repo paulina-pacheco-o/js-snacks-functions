@@ -5,8 +5,20 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+function letters() {
+  for (let i = 0; i < names.length; i++) {
+    const letter = names[i].charAt(0);
+    const newArray = letter.split("");
+    console.log(newArray);
+  }
+
+  //const firstLetters = newArray
+}
+
 
 // Invoca la funzione qui e stampa il risultato in console
+letters()
+//console.log(firstLetters);
 
 
 
