@@ -11,7 +11,7 @@ const saluto = () => {
 
 // Invoca la funzione qui e stampa il risultato in console
 saluto()
-console.log(`ciao` + userName);
+console.log(`ciao` + " " + userName);
 
 
 
