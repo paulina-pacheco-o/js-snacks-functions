@@ -4,14 +4,11 @@ const userName = 'Mario';
 
 
 // Dichiara la funzione qui.
-const saluto = () => {
-  return `ciao` + userName
-}
+const saluto = name => console.log(`Ciao ${name}`)
 
 
 // Invoca la funzione qui e stampa il risultato in console
-saluto()
-console.log(`ciao` + " " + userName);
+saluto(userName)
 
 
 
