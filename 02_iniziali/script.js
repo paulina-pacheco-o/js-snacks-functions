@@ -5,20 +5,18 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-function letters() {
-  for (let i = 0; i < names.length; i++) {
+function letters(array) {
+  const initials = [];
+  for (let i = 0; i < array.length; i++) {
     const letter = names[i].charAt(0);
-    const newArray = letter.join(",");
-    console.log(newArray);
+    initials.push(array[i][0]);
   }
-
-  //const firstLetters = newArray
+  return initials;
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
-letters()
-//console.log(firstLetters);
+console.log(letters(names));
 
 
 
