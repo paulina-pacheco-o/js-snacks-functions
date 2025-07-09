@@ -6,8 +6,8 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 // Dichiara la funzione qui.
 function nameWithA() {
   for (let i = 0; i < names.length; i++) {
-    const letter = names[i].charAt(0);
-    if (letter === "A") {
+    const letter = names[i].charAt(0);//A //names= tutti i nomi
+    if (names[i].charAt(0) === "A") {
 
     }
   }

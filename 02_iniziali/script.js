@@ -8,7 +8,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 function letters() {
   for (let i = 0; i < names.length; i++) {
     const letter = names[i].charAt(0);
-    const newArray = letter.split("");
+    const newArray = letter.join(",");
     console.log(newArray);
   }
 
