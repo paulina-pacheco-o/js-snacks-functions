@@ -4,18 +4,20 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
-function letters() {
-  for (let i = 0; i < word.length; i++) {
-    const vowels = word === (a, i)
-    if (word === (a, e, i, o, u)) {
-      console.log(word.lenght)
+function letters(string) {
+  const vowels = [`a`, `e`, `i`, `o`, `u`]
+  let count = 0
+  for (let i = 0; i < string.length; i++) {
+    if (vowels.includes(string[i])) {
+      count++;
     }
   }
+  return count
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
-letters()
+console.log(letters(word));
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
