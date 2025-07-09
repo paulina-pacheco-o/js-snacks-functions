@@ -4,17 +4,18 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function nameWithA() {
-  for (let i = 0; i < names.length; i++) {
-    const letter = names[i].charAt(0);//A //names= tutti i nomi
-    if (names[i].charAt(0) === "A") {
-
+function nameWithA(array, letter) {
+  const filter = [];
+  for (let i = 0; i < array.length; i++) {
+    //const letter = names[i].charAt(0);//A //names= tutti i nomi
+    if (array[i].charAt(0).toLowerCase() === letter.toLowerCase()) {
+      filter.push(array[i]);
     }
   }
+  return filter;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-
-nameWithA()
+console.log(nameWithA(names, `a`));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
